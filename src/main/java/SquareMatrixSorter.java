@@ -2,6 +2,11 @@ import java.util.*;
 
 public class SquareMatrixSorter {
 
+    /**
+     * Validates matrix parameters
+     * @param matrix - matrix of integers
+     * @throws Exception
+     */
     void validateMatrix(int[][] matrix) throws Exception {
 
         if (matrix == null) {
