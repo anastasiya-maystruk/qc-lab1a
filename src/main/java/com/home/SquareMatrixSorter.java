@@ -1,3 +1,4 @@
+package com.home;
 import java.util.*;
 
 public class SquareMatrixSorter {
@@ -107,12 +108,16 @@ public class SquareMatrixSorter {
         return matrix;
     }
 
-    public void main(int[][] matrix, boolean ascending) throws Exception {
+    public void setup(int[][] matrix, boolean ascending) throws Exception {
 
         validateMatrix(matrix);
         countAverage(matrix);
         centralElement(matrix);
         sortMatrix(matrix,ascending);
+
+    }
+
+    public static void main(String[] args){
 
     }
 

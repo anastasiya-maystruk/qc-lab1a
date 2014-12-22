@@ -1,3 +1,4 @@
+package com.home;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -9,7 +10,7 @@ public class SquareMatrixSorterJUnitTests {
 
         int[][] input = null;
         SquareMatrixSorter squareMatrixSorter = new SquareMatrixSorter();
-        squareMatrixSorter.main(input, true);
+        squareMatrixSorter.setup(input, true);
     }
 
     @Test(expected = Exception.class)
@@ -17,7 +18,7 @@ public class SquareMatrixSorterJUnitTests {
 
         int[][] input = new int[0][0];
         SquareMatrixSorter squareMatrixSorter = new SquareMatrixSorter();
-        squareMatrixSorter.main(input, true);
+        squareMatrixSorter.setup(input, true);
     }
 
     @Test(expected = Exception.class)
@@ -25,7 +26,7 @@ public class SquareMatrixSorterJUnitTests {
 
         int[][] input = new int[3][2];
         SquareMatrixSorter squareMatrixSorter = new SquareMatrixSorter();
-        squareMatrixSorter.main(input, true);
+        squareMatrixSorter.setup(input, true);
     }
 
     @Test(expected = Exception.class)
@@ -38,7 +39,7 @@ public class SquareMatrixSorterJUnitTests {
         };
 
         SquareMatrixSorter squareMatrixSorter = new SquareMatrixSorter();
-        squareMatrixSorter.main(input, true);
+        squareMatrixSorter.setup(input, true);
     }
 
     @Test(expected = Exception.class)
@@ -46,7 +47,7 @@ public class SquareMatrixSorterJUnitTests {
 
         int[][] input = new int[4][4];
         SquareMatrixSorter squareMatrixSorter = new SquareMatrixSorter();
-        squareMatrixSorter.main(input, true);
+        squareMatrixSorter.setup(input, true);
     }
 
     @Test(expected = Exception.class)
@@ -54,7 +55,7 @@ public class SquareMatrixSorterJUnitTests {
 
         int[][] input = new int[4][4];
         SquareMatrixSorter squareMatrixSorter = new SquareMatrixSorter();
-        squareMatrixSorter.main(input, true);
+        squareMatrixSorter.setup(input, true);
     }
 
     @Test(expected = Exception.class)
@@ -68,7 +69,7 @@ public class SquareMatrixSorterJUnitTests {
                 {9, 10, 11, 12, 13}
         };
         SquareMatrixSorter squareMatrixSorter = new SquareMatrixSorter();
-        squareMatrixSorter.main(input, true);
+        squareMatrixSorter.setup(input, true);
     }
 
 
