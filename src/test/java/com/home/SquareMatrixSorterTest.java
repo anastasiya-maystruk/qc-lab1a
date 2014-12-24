@@ -3,7 +3,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class SquareMatrixSorterJUnitTests {
+public class SquareMatrixSorterTest {
 
     @Test(expected = Exception.class)
     public void testMainForForNull() throws Exception {
